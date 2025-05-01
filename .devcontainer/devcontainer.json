@@ -1,0 +1,17 @@
+{
+  "name": "MicroProfile Tutorial UI",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "asciidoctor.asciidoctor-vscode",
+        "github.vscode-github-actions"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install -g gulp-cli && npm install"
+}
