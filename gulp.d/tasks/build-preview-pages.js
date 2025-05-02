@@ -51,7 +51,7 @@ module.exports = (src, previewSrc, previewDest, sink = () => map()) => (done) =>
             } else {
               const doc = Asciidoctor.load(file.contents, { safe: 'safe', attributes: ASCIIDOC_ATTRIBUTES })
               uiModel.page.attributes = Object.entries(doc.getAttributes())
-                .filter(([name, val]) => name.startsWith('page-'))
+                .filter(([name]) => name.startsWith('page-'))
                 .reduce((accum, [name, val]) => {
                   accum[name.substr(5)] = val
                   return accum
@@ -122,11 +122,11 @@ function copyImages (src, dest) {
     .pipe(map((file, enc, next) => next()))
 }
 
-function resolvePage (spec, context = {}) {
+function resolvePage (spec) {
   if (spec) return { pub: { url: resolvePageURL(spec) } }
 }
 
-function resolvePageURL (spec, context = {}) {
+function resolvePageURL (spec) {
   if (spec) return '/' + (spec = spec.split(':').pop()).slice(0, spec.lastIndexOf('.')) + '.html'
 }
 

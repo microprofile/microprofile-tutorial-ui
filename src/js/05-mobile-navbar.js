@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   'use strict'
 
   var navbarBurger = document.querySelector('.navbar-burger')

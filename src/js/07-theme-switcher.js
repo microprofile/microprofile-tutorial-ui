@@ -1,6 +1,6 @@
 /* Inspired by https://github.com/spring-io/antora-ui-spring/ */
 
-;(function () {
+(function () {
   'use strict'
 
   activateSwitch(document.getElementById('theme-switcher-checkbox'))
