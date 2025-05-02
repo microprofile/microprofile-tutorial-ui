@@ -9,6 +9,7 @@
 }
 
 @media screen and (min-width: 1024px) {
+
   .doc {
     flex: auto;
     font-size: var(--doc-font-size--desktop);
@@ -38,6 +39,7 @@
 }
 
 @media screen and (min-width: 769px) {
+
   .doc > h1.page:first-child {
     margin-top: 2.5rem;
   }
@@ -97,7 +99,7 @@
 .doc h4 .anchor::before,
 .doc h5 .anchor::before,
 .doc h6 .anchor::before {
-  content: "\00a7";
+  content: '\00a7';
 }
 
 .doc h1:hover .anchor,
@@ -181,7 +183,7 @@
 }
 
 .doc .float-group::after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -282,6 +284,7 @@
 }
 
 /* NOTE let the grid win in case of frame-none */
+
 .doc table.frame-sides > :last-child > :last-child > * {
   border-bottom-width: 0;
 }
@@ -581,11 +584,11 @@
 }
 
 .doc ul.checklist i.fa-check-square-o::before {
-  content: "\2713";
+  content: '\2713';
 }
 
 .doc ul.checklist i.fa-square-o::before {
-  content: "\274f";
+  content: '\274f';
 }
 
 .doc .dlist .dlist,
@@ -660,7 +663,7 @@
 }
 
 .doc details > summary::before {
-  content: "";
+  content: '';
   border: solid transparent;
   border-left-color: currentColor;
   border-width: 0.3em 0 0.3em 0.5em;
@@ -677,7 +680,7 @@
 }
 
 .doc details > summary::after {
-  content: "";
+  content: '';
   width: 1rem;
   height: 1em;
   position: absolute;
@@ -709,7 +712,7 @@
 
 .doc .exampleblock > .content::after,
 .doc details.result > .content::after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -738,6 +741,7 @@
 }
 
 /* NEEDS REVIEW prevent pre in table from causing article to exceed bounds */
+
 .doc .tableblock pre,
 .doc .listingblock.wrap pre {
   white-space: pre-wrap;
@@ -781,7 +785,7 @@
 }
 
 .doc .source-toolbox > :not(:last-child)::after {
-  content: "|";
+  content: '|';
   letter-spacing: 0;
   padding: 0 1ch;
 }
@@ -831,7 +835,7 @@
 }
 
 .doc .source-toolbox .copy-toast::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   width: 1em;
@@ -933,12 +937,12 @@
 }
 
 .doc b.button::before {
-  content: "[";
+  content: '[';
   padding-right: 0.25em;
 }
 
 .doc b.button::after {
-  content: "]";
+  content: ']';
   padding-left: 0.25em;
 }
 
@@ -981,7 +985,7 @@
 }
 
 .doc .menuseq i.caret::before {
-  content: "\203a";
+  content: '\203a';
   font-size: 1.1em;
   font-weight: var(--body-font-weight-bold);
   line-height: calc(1 / 1.1);

@@ -10,7 +10,7 @@
   position: relative;
   width: 2.75rem;
   height: 1.5rem;
-  background: no-repeat url("../img/octicons-16.svg#view-sun") 90% 50% / 1rem 1rem, no-repeat url("../img/octicons-16.svg#view-moon") 10% 50% / 1rem 1rem;
+  background: no-repeat url('../img/octicons-16.svg#view-sun') 90% 50% / 1rem 1rem, no-repeat url('../img/octicons-16.svg#view-moon') 10% 50% / 1rem 1rem;
   background-color: var(--navbar-switch-background);
   border: 1px solid var(--navbar-switch-button-background);
   border-radius: 1rem;
@@ -18,7 +18,7 @@
 }
 
 .switch input::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0.175em;
   top: 0.175em;

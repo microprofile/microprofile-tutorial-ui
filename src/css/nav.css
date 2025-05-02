@@ -3,19 +3,20 @@
   top: var(--navbar-height);
   left: 0;
   width: 100%;
-
   font-size: calc(17 / var(--rem-base) * 1rem);
   z-index: var(--z-index-nav);
   visibility: hidden;
 }
 
 @media screen and (min-width: 769px) {
+
   .nav-container {
     width: var(--nav-width);
   }
 }
 
 @media screen and (min-width: 1024px) {
+
   .nav-container {
     font-size: calc(15.5 / var(--rem-base) * 1rem);
     flex: none;
@@ -36,12 +37,14 @@
 }
 
 @media screen and (min-width: 769px) {
+
   .nav {
     box-shadow: 1px 0 3px var(--nav-border-color);
   }
 }
 
 @media screen and (min-width: 1024px) {
+
   .nav {
     top: calc(var(--navbar-height) + var(--toolbar-height));
     box-shadow: none;
@@ -74,7 +77,7 @@ html.is-clipped--nav {
 }
 
 .nav-panel-menu:not(.is-active)::after {
-  content: "";
+  content: '';
   background: rgba(0, 0, 0, 0.5);
   display: block;
   position: absolute;
@@ -114,12 +117,14 @@ html.is-clipped--nav {
 }
 
 /* adds some breathing room below a nested list */
+
 .nav-item-toggle ~ .nav-list {
   padding-bottom: 0.125rem;
 }
 
 /* matches list without a title */
-.nav-item[data-depth="0"] > .nav-list:first-child {
+
+.nav-item[data-depth='0'] > .nav-list:first-child {
   display: block;
   margin: 0;
 }
@@ -190,7 +195,7 @@ html.is-clipped--nav {
 }
 
 .nav-panel-explore .context .version::after {
-  content: "";
+  content: '';
   background: url(../img/chevron.svg) no-repeat center right / auto 100%;
   width: 1.25em;
   height: 0.75em;

@@ -3,6 +3,7 @@
   Description: Light theme as seen on github.com
   Source: https://highlightjs.org/static/demo/styles/github.css
 */
+
 .hljs {
   color: #24292e;
   background: #fff;
@@ -114,6 +115,7 @@
   Description: Dark dimmed theme as seen on github.com
   Source: https://highlightjs.org/static/demo/styles/github-dark-dimmed.css
 */
+
 html.theme-dark .hljs {
   color: #adbac7;
   background: #22272e;
