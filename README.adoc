@@ -117,3 +117,55 @@ It will generate an UI bundle tagged `latest` which is available as {url-micropr
 This bundle is in turn already referenced as `ui.bundle.url` property in `antora-playbook.yml` configuration file of {url-microprofile-tutorial}[MicroProfile Tutorial Playbook].
 
 The live site can be found at {url-microprofile-tutorial-live}[{url-microprofile-tutorial-live}].
+
+== GitHub Pages Deployment
+
+This project can also be built and deployed directly to GitHub Pages, which allows you to host the UI documentation directly from this repository.
+
+=== Building for GitHub Pages
+
+To build the UI for GitHub Pages locally, run:
+
+ $ gulp github-pages
+
+This will generate the complete site in the `public` directory, ready for GitHub Pages deployment.
+
+=== Automatic Deployment
+
+The project includes a GitHub Actions workflow that automatically builds and deploys the site to GitHub Pages whenever changes are pushed to the main branch. The workflow:
+
+1. Checks out the repository
+2. Sets up Node.js
+3. Installs dependencies
+4. Builds the site using the `github-pages` task
+5. Deploys the built site to GitHub Pages
+
+To enable GitHub Pages for your fork of this repository:
+
+1. Go to your repository's Settings tab
+2. Navigate to Pages in the left sidebar
+3. Under "Source", select "GitHub Actions"
+
+Once deployed, your site will be available at `https://[username].github.io/microprofile-tutorial-ui/` or at a custom domain if you configure one in the GitHub Pages settings.
+
+This approach allows you to maintain both the UI bundle for Antora and a standalone documentation site from the same repository.
+
+== Development with Dev Containers / GitHub Codespaces
+
+This project includes Dev Container configuration, making it easy to develop using Visual Studio Code Dev Containers or GitHub Codespaces. The development environment comes pre-configured with:
+
+* Node.js LTS
+* Gulp CLI for build automation
+* GitHub Actions extension for workflow management
+* AsciiDoctor extension for documentation editing
+
+=== Using GitHub Codespaces
+
+To start developing using GitHub Codespaces:
+
+1. Go to your repository on GitHub
+2. Click the green "Code" button
+3. Select the "Codespaces" tab
+4. Click "Create codespace on main"
+
+This will create a cloud-based development environment with all dependencies pre-installed.
