@@ -29,6 +29,7 @@
 }
 
 @media screen and (min-width: 1024px) {
+
   .nav-toggle {
     display: none;
   }
@@ -58,6 +59,7 @@
 }
 
 @media screen and (min-width: 1024px) {
+
   .edit-this-page {
     display: block;
   }

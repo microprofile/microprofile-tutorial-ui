@@ -1,4 +1,5 @@
 /* Style for https://gitlab.com/antora/antora-lunr-extension */
+
 /* NOTE: all selectors are prefixed with 'body' because the lunr-extension loads its CSS *after* the site CSS so it had to be a more specific selector. */
 
 body .navbar-item.search {

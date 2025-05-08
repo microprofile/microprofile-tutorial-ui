@@ -6,6 +6,7 @@
 }
 
 @media screen and (min-width: 1024px) {
+
   .breadcrumbs {
     display: block;
   }
@@ -29,7 +30,7 @@ a + .breadcrumbs {
 }
 
 .breadcrumbs li::after {
-  content: "/";
+  content: '/';
   padding: 0 0.5rem;
 }
 

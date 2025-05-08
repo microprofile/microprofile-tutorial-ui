@@ -74,6 +74,7 @@ body {
 
 #search-input:disabled {
   background-color: #dbdbdb;
+
   /* disable cursor */
   cursor: not-allowed;
   pointer-events: all !important;
@@ -203,6 +204,7 @@ body {
 }
 
 @media screen and (max-width: 768.5px) {
+
   .navbar-brand .navbar-item.search {
     padding-left: 0;
     padding-right: 0;
@@ -210,12 +212,14 @@ body {
 }
 
 @media screen and (min-width: 769px) {
+
   #search-input {
     width: 200px;
   }
 }
 
 @media screen and (max-width: 1023.5px) {
+
   .navbar-brand {
     height: inherit;
   }
@@ -249,6 +253,7 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+
   .navbar-burger {
     display: none;
   }
@@ -278,7 +283,7 @@ body {
   .navbar-link::after {
     border-width: 0 0 1px 1px;
     border-style: solid;
-    content: "";
+    content: '';
     display: block;
     height: 0.5em;
     pointer-events: none;

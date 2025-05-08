@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   'use strict'
 
   var CMD_RX = /^\$ (\S[^\\\n]*(\\\n(?!\$ )[^\\\n]*)*)(?=\n|$)/gm
@@ -15,7 +15,7 @@
     if (pre.classList.contains('highlight')) {
       code = pre.querySelector('code')
       if ((language = code.dataset.lang) && language !== 'console') {
-        ;(lang = document.createElement('span')).className = 'source-lang'
+        (lang = document.createElement('span')).className = 'source-lang'
         lang.appendChild(document.createTextNode(language))
       }
     } else if (pre.innerText.startsWith('$ ')) {
@@ -30,10 +30,10 @@
     } else {
       return
     }
-    ;(toolbox = document.createElement('div')).className = 'source-toolbox'
+    (toolbox = document.createElement('div')).className = 'source-toolbox'
     if (lang) toolbox.appendChild(lang)
     if (supportsCopy) {
-      ;(copy = document.createElement('button')).className = 'copy-button'
+      (copy = document.createElement('button')).className = 'copy-button'
       copy.setAttribute('title', 'Copy to clipboard')
       if (svgAs === 'svg') {
         var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
@@ -49,7 +49,7 @@
         img.className = 'copy-icon'
         copy.appendChild(img)
       }
-      ;(toast = document.createElement('span')).className = 'copy-toast'
+      (toast = document.createElement('span')).className = 'copy-toast'
       toast.appendChild(document.createTextNode('Copied!'))
       copy.appendChild(toast)
       toolbox.appendChild(copy)

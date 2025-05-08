@@ -39,6 +39,7 @@
 }
 
 @supports (scrollbar-width: none) {
+
   .toc.sidebar .toc-menu ul {
     scrollbar-width: none;
   }
@@ -50,6 +51,7 @@
 }
 
 @media screen and (min-width: 1024px) {
+
   .toc .toc-menu h3 {
     font-size: calc(15 / var(--rem-base) * 1rem);
   }
@@ -63,11 +65,11 @@
   margin: 0;
 }
 
-.toc .toc-menu li[data-level="2"] a {
+.toc .toc-menu li[data-level='2'] a {
   padding-left: 1.25rem;
 }
 
-.toc .toc-menu li[data-level="3"] a {
+.toc .toc-menu li[data-level='3'] a {
   padding-left: 2rem;
 }
 

@@ -111,6 +111,19 @@ const previewTask = createTask({
   call: series(previewBuildTask, previewServeTask),
 })
 
+const githubPagesTask = createTask({
+  name: 'github-pages',
+  desc: 'Build the UI for GitHub Pages hosting',
+  call: series(
+    cleanTask,
+    previewBuildTask,
+    () => {
+      log('Site built for GitHub Pages in the public directory')
+      return Promise.resolve()
+    }
+  )
+})
+
 module.exports = exportTasks(
   bundleTask,
   cleanTask,
@@ -121,5 +134,6 @@ module.exports = exportTasks(
   bundlePackTask,
   previewTask,
   previewBuildTask,
-  packTask
+  packTask,
+  githubPagesTask
 )
