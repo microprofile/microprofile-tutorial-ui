@@ -59,6 +59,10 @@ module.exports = (src, previewSrc, previewDest, sink = () => map()) => (done) =>
               uiModel.page.layout = doc.getAttribute('page-layout', 'default')
               uiModel.page.title = doc.getDocumentTitle()
               uiModel.page.contents = Buffer.from(doc.convert())
+              
+              // Set a meaningful editUrl for preview pages that points to the actual GitHub repo
+              const relativePath = path.relative(previewSrc, file.path)
+              uiModel.page.editUrl = `https://github.com/microprofile/microprofile-tutorial-ui/edit/main/preview-src/${relativePath}`
             }
             file.extname = '.html'
             try {
