@@ -182,6 +182,8 @@ html.is-clipped--nav {
   justify-content: space-between;
   line-height: 1;
   height: var(--drawer-height);
+  font-family: var(--heading-font-family);
+  font-weight: normal;
 }
 
 .nav-panel-explore:not(:first-child) .context {
