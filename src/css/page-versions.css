@@ -22,6 +22,8 @@
   padding: 0.5rem 1.5rem 0.5rem 0.5rem;
   position: relative;
   z-index: var(--z-index-page-version-menu);
+  font-family: var(--heading-font-family);
+  font-weight: normal;
 }
 
 .page-versions .version-menu {
